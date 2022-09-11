@@ -26,6 +26,16 @@ nameserver 127.0.0.1
 (c)it will work instantly after saving the file
 
 * If the DNS server you've just added is not reachable, how can you get any particular hostname to resolve locally? 
+
+    vi /etc/hosts
+
+The file must include the following information:
+
+    The IP address, fully qualified domain name, and the host name of the computer.
+    
+    The IP address 127.0.0.1, the fully qualified domain name localhost.localdomain, and the host name localhost.
+    
+
 * How would you check for SELinux related errors?
 * Write the commands to add 30GB disk space to a logical volume named "docker" that belongs to a logical group named "docker-group".
 * In the root of this repository, create a Bash script called "listit.sh", when executed, this script must do the following (in order):
