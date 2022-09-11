@@ -28,3 +28,7 @@ else
   echo "testContainer does not exist"
  sudo docker run --detach --name=alfred --volume=/var/lib/mysql:/var/lib/mysql alfred 
 fi
+
+
+mysql -u admin -p admin1 < db.sql
+
