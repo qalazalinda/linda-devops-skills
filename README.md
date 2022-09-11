@@ -100,6 +100,7 @@ oc scale dailyplanet --replicas=2
 * Write the command to gain remote shell access to a pod called "lex" in the "smallville" project (namespace).
 
 oc project smallville
+
 oc rsh lex
 
 
