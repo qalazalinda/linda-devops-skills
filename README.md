@@ -11,6 +11,8 @@ Please use this template to create your own repository of this test and share yo
 * When you've completed all the questions, share your repository with us by sending us the repo's URL.
 # Linux
 * What is the command to list the contents of a direcory, line by line and ordered by size ascending in human readable format?
+ls -laShr
+
 * How would you add a DNS server to a network interface in Linux?
 * If the DNS server you've just added is not reachable, how can you get any particular hostname to resolve locally? 
 * How would you check for SELinux related errors?
