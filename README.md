@@ -38,7 +38,21 @@ The file must include the following information:
     
 
 * How would you check for SELinux related errors?
+
+View /var/log/messages or /var/log/audit/audit.log log files
+
 * Write the commands to add 30GB disk space to a logical volume named "docker" that belongs to a logical group named "docker-group".
+
+(a) List the file system
+df -h /docker
+
+(b) Check whether free space is available space in the volume group.
+vgdisplay docker-group
+
+(c)Command to increase the size
+lvextend -L +30G   /dev/mapper/docker-group
+resize2fs /dev/mapper/docker-group
+
 * In the root of this repository, create a Bash script called "listit.sh", when executed, this script must do the following (in order):
     * Create a file called directories.list that contains the directory names only of the current directory.
     * Add a line at the beginning of the directories.list file that reads "line one's line".
