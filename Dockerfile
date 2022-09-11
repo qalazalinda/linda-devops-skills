@@ -1,0 +1,5 @@
+FROM ubuntu:jammy
+
+EXPOSE 3307
+ENV BRUCE=WAYNE
+RUN echo $BRUCE >> ~/BATCAVE
