@@ -27,13 +27,14 @@ nameserver 127.0.0.1
 
 * If the DNS server you've just added is not reachable, how can you get any particular hostname to resolve locally? 
 
+
     vi /etc/hosts
 
 The file must include the following information:
 
-    The IP address, fully qualified domain name, and the host name of the computer.
+   The IP address, fully qualified domain name, and the host name of the computer.
     
-    The IP address 127.0.0.1, the fully qualified domain name localhost.localdomain, and the host name localhost.
+   The IP address 127.0.0.1, the fully qualified domain name localhost.localdomain, and the host name localhost.
     
 
 * How would you check for SELinux related errors?
