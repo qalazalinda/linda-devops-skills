@@ -114,4 +114,13 @@ oc get secrets loislane -n dailyplanet -o json >> config.json
     * The volume can be mounted as read-write by more than one node.
 # General
 * How would you ensure any change made to this Dockerfile is source controlled, approved, tested and deployed. Explain which tools you will use as if this was going into a production environment.
+
+ Tools to use:
+ 
+ Bitbucket or Git - To source control the code
+ Bamboo or Jenkins - To deploy the code from pre-prod environments to production environment.
+ 
+ The QA and Dev team need to be involved for code testing, to insure there are not bugs in the application code.
+ 
+
 * Commit and push your changes.
