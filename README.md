@@ -19,8 +19,10 @@ ls -laShr
 
 
 (a) sudo vi /etc/resolv.conf
+
 (b) Add your new nameserver
 nameserver 127.0.0.1
+
 (c)it will work instantly after saving the file
 
 * If the DNS server you've just added is not reachable, how can you get any particular hostname to resolve locally? 
