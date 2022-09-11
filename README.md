@@ -119,6 +119,7 @@ oc get secrets loislane -n dailyplanet -o json >> config.json
  
  Bitbucket or Git - To source control the code
  Bamboo or Jenkins - To deploy the code from pre-prod environments to production environment.
+ ServiceNow - To log the change and add all required stakeholders to approve or reject the change.
  
  The QA and Dev team need to be involved for code testing, to insure there are not bugs in the application code.
  
