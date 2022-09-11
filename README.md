@@ -82,11 +82,31 @@ resize2fs /dev/mapper/docker-group
 # OpenShift / OKD
 For the questions below, please make use of the OpenShift CLI (oc) where applicable.
 * Write the command used to login to a remote OpenShift cluster.
+
+oc login {{api_url}}  and you wll be prompted got username and password.
+
 * Write the command to add the "cluster-admin" cluster role to a user called "clark".
+
+oc adm policy add-cluster-role-to-user cluster-admin clark
+
 * Write the command used to list all pods in the "smallville" project (namespace).
+
+oc get pods -n smallville
+
 * Write the command to scale an application (deployment config) called "dailyplanet" to 2 pods.
+
+oc scale dailyplanet --replicas=2
+
 * Write the command to gain remote shell access to a pod called "lex" in the "smallville" project (namespace).
+
+oc project smallville
+oc rsh lex
+
+
 * Write the command to export a secret called "loislane" in JSon format, the secret is in the "dailyplanet" project (namespace).
+
+oc get secrets loislane -n dailyplanet -o json >> config.json
+
 * Add a file called "Krypton" (in YAML format) to this repo that contains the resource defintion for a Persistent Volume Claim with the following properties:
     * Points to a Persistent Volume called "zod".
     * Requests 5GB of storage.
